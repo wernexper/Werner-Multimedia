@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimer Interfaz Bootstrap</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        .navbar{
+            box-shadow: 2px 2px 5px #000;
+            opacity: .7;
+        }
+       .navbar .nav-item .nav-link{
+            color:#fff;
+        }
+		/*comenzar con este css*/
+        .main-header{
+            /*background: url(img/fondo.jpg);
+            /*cubrir todo el fondo*/
+            background-size: cover;
+            min-height: 500px;
+        }
+        .background-overlay{
+            background: rgba(48, 51, 107, .6);
+        }
+        
+    </style>
+</head>
+<body>
+    <!--zona de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!--he camabiado el texto por un logotipo-->
+             <!--Este enlace me lleva al inicio de la aplicación-->
+          <a class="navbar-brand" href="/"><img src="img/logotipo.png" alt="productos eganos" style="width: 70%"></a>
+          <h2 style="color: aquamarine; text-align: left;" >Titulo</h2>
+          <!--este es el botón que despliega el menu-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <!--A la calse L le aplicare margen auto-->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                 <!--cambio el nombre de los enlaces-->
+                <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+              <!--HE QQUITADO EL ULTIMO ENLACE-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--cabecera / header-->
+      <header class="main-header">
+
+        <!--clase interna para hacer un efecto dinámico--> 
+        <div class="contenedor d-flex justify-content-evenly ">
+          <div class="row my-5">
+            <form>
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nombre Archivo</label>
+                <input type="text" class="form-control"  aria-describedby="emailHelp">
+                
+              </div>
+              <button type="submit" class="btn btn-primary mb-1 shadow-lg">Subir Archivo</button>
+              <button type="submit" class="btn btn-primary mb-1 shadow-lg">Examinar</button>
+            </form>
+          </div>
+          <div class="row my-5">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nombre Archivo</label>
+                <input type="text" class="form-control"  aria-describedby="emailHelp">
+                
+              </div>
+              <button type="submit " class=" shadow-lg btn btn-primary mb-1">Examinar</button>
+            </form>
+          </div>
+        </div>
+       <!--Fotos-->
+       <div class="contenedor d-flex justify-content-evenly">
+        <div class="row my-5 justify-content-center align-self-center" >
+          
+            <div class="mb-3">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/aguacate.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Esto es un aguacate.</p>
+                </div>
+              </div>
+              <div class="mb-3">
+              </div>       
+               <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/aguacate.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Esto es un aguacate.</p>
+                </div>
+              </div>  
+              <div class="mb-3">
+              </div>  
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/aguacate.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Esto es un aguacate.</p>
+                </div>
+              </div>          
+            </div>
+            
+            
+         
+        </div>
+        <div class="row my-5">
+          
+          <div class="mb-3">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/aguacate.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Esto es un aguacate.</p>
+              </div>
+            </div>
+            <div class="mb-3">
+            </div>       
+             <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/aguacate.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Esto es un aguacate.</p>
+              </div>
+            </div>  
+            <div class="mb-3">
+            </div>  
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/aguacate.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Esto es un aguacate.</p>
+              </div>
+            </div>          
+          </div>
+          
+          
+        </form>
+      </div>
+      </div>
+      </header>
+      <!--footer-->
+      <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      
+      <!--Caracteristicas-->
+      
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+    
+  
+    
+    
+</body>
+</html>
